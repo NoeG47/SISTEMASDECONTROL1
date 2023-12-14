@@ -27,7 +27,21 @@ public class Ej_Compartido {
 		// Calcular el área y el perímetro
 		System.out.println("El área de la circunferencia es: " + calcularAreaCircunferenciaL(radio));
 		System.out.println("El perímetro de la circunferencia es: " + calcularPerimetroCircunferenciaL(radio));
-
+		System.out.println("\n");
+		
+		// CASO CILINDRO :)
+		System.out.println("CASO CILINDRO");
+		double radioCilindro = 0;
+		double alturaCilindro = 0;
+		// Calcular el área del cilindro
+		System.out.println("Introduce el radio del cilindro: ");
+		radioCilindro = in.nextDouble();
+		System.out.println("Introduce la altura del cilindro: ");
+		alturaCilindro = in.nextDouble();
+		System.out.println("El área de la cilindro es: " + calcularAreaCilindroN(radioCilindro, alturaCilindro));
+		System.out.println("\n");
+		
+		
 	}
 
 	public static double calcularAreaTriangulo(double base, double altura) {
@@ -41,6 +55,19 @@ public class Ej_Compartido {
 
 	public static double calcularPerimetroCircunferenciaL(double radio) {
 		return 2 * 3.14 * radio;
+
+	}
+
+	public static double calcularAreaCilindroN(double radioCilindro, double alturaCilindro) {
+		double pi = 3.14;
+
+		double areaBase = pi * radioCilindro * radioCilindro;
+
+		double areaLateral = 2 * pi * radioCilindro * alturaCilindro;
+
+		double areaTotal = 2 * areaBase + areaLateral;
+
+		return areaTotal;
 
 	}
 }
