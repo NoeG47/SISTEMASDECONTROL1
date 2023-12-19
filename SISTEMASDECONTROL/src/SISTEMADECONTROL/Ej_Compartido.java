@@ -41,18 +41,6 @@ public class Ej_Compartido {
 		System.out.println("El área de la cilindro es: " + calcularAreaCilindroN(radioCilindro, alturaCilindro));
 		System.out.println("\n");
 
-		// CASO RECTÁNGULO
-		System.out.println("CASO RECTÁNGULO");
-		double longitud = 0;
-		double ancho = 0;
-		// Calcular el área de un rectángulo
-		System.out.print("Ingrese la longitud del rectángulo: ");
-		longitud = in.nextDouble();
-		System.out.print("Ingrese el ancho del rectángulo: ");
-		ancho = in.nextDouble();
-		System.out.println("El área de un rectángulo es: " + calcularAreaRectanguloL(longitud, ancho));
-		System.out.println("\n");
-
 	}
 
 	public static double calcularAreaTriangulo(double base, double altura) {
@@ -81,9 +69,4 @@ public class Ej_Compartido {
 		return areaTotal;
 
 	}
-
-	public static double calcularAreaRectanguloL(double longitud, double ancho) {
-		return longitud * ancho;
-	}
-
 }
