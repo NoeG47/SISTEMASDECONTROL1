@@ -47,6 +47,19 @@ public class Ej_Compartido {
 		double ancho = 0;
 		// Calcular el área de un rectángulo
 		System.out.print("Ingrese la longitud del rectángulo: ");
+        longitud = in.nextDouble();
+        System.out.print("Ingrese el ancho del rectángulo: ");
+        ancho = in.nextDouble();
+        System.out.println("El área de un rectángulo es: " + calcularAreaRectanguloL(longitud,ancho));
+        System.out.println("\n");
+        
+        //CASO ÁREA DEL CUBO
+        System.out.println("CASO ÁREA CUBO");
+        double longitudLado=0;
+        //Calcular el área del cubo
+        System.out.println("Introduce la longitud del lado del cubo: ");
+        longitudLado=in.nextDouble();
+        System.out.println("El área del cubo es: " +calcularAreaCuboL(longitudLado));
 		longitud = in.nextDouble();
 		System.out.print("Ingrese el ancho del rectángulo: ");
 		ancho = in.nextDouble();
@@ -98,4 +111,7 @@ public class Ej_Compartido {
 	public static double calcularVolumenCuboN(double ladoCubo) {
 		return ladoCubo * ladoCubo * ladoCubo;
 	}
+	 public static double calcularAreaCuboL(double longitudLado) {
+	        return 6 * longitudLado * longitudLado;
+	    }
 }
