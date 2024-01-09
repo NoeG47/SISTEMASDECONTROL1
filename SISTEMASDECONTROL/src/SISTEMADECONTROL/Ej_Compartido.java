@@ -86,4 +86,5 @@ public class Ej_Compartido {
 		return longitud * ancho;
 	}
 
+	
 }
