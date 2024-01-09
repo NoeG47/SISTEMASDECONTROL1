@@ -53,6 +53,14 @@ public class Ej_Compartido {
 		System.out.println("El área de un rectángulo es: " + calcularAreaRectanguloL(longitud, ancho));
 		System.out.println("\n");
 
+		// CASO CUBO :)
+		System.out.println("CASO CUBO");
+		double ladoCubo = 0;
+		// Calcular el volumen del cubo
+		System.out.println("Introduce el lado del cubo: ");
+		ladoCubo = in.nextDouble();
+		System.out.println("El volumen del cubo es: " + calcularVolumenCuboN(ladoCubo));
+		System.out.println("\n");
 	}
 
 	public static double calcularAreaTriangulo(double base, double altura) {
@@ -86,5 +94,8 @@ public class Ej_Compartido {
 		return longitud * ancho;
 	}
 
-	
+	public static double calcularVolumenCuboN(double ladoCubo) {
+		return ladoCubo * ladoCubo * ladoCubo;
+	}
+
 }
